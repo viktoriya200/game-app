@@ -1,0 +1,43 @@
+@mixin respond-to($name, $bp: $breakpoints) {
+  $max: breakpoint-max($name, $bp);
+
+  @if $max {
+    @media (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin respond-to-min($name, $bp: $breakpoints) {
+  $min: breakpoint-min($name, $bp);
+
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin font($alias, $name, $weight) {
+  @font-face {
+    font-family: $alias;
+    src:
+            url('@/assets/fonts/' + $name + '.woff2') format('woff2'),
+            url('@/assets/fonts/' + $name + '.woff') format('woff');
+    font-weight: $weight;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+@mixin hover {
+  @media (hover), (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    &:hover {
+      @content;
+    }
+  }
+}
