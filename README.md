@@ -1,19 +1,8 @@
-# game-app
+# "Save or spend" game
 
-## Project setup
-```
-npm install
-```
+It's a small game, what show you how much money you have been saved for this year
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+The game has 12 questions with YES/NO answers
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Project was created with using Vue 3 Composition API
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
