@@ -30,7 +30,6 @@
           color="pink"
           class="step-result-card__btn"
           @click="$emit('next-card')"
-          @keydown.enter="$emit('next-card')"
         >
           Дальше
         </VButton>
