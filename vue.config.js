@@ -1,8 +1,6 @@
 const {defineConfig} = require('@vue/cli-service')
 module.exports = defineConfig({
-    publicPath: process.env.NODE_ENV === 'production'
-        ? '/game-app/'
-        : '/',
+    publicPath: '/game-app/',
     transpileDependencies: true,
     css: {
         loaderOptions: {
