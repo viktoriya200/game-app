@@ -6,3 +6,5 @@ The game has 12 questions with YES/NO answers
 
 Project was created with using Vue 3 Composition API
 
+[View deployment](https://viktoriya200.github.io/game-app/)
+
